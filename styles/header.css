@@ -1,0 +1,75 @@
+/* header styles */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  height: 90px;
+  background-color: var(--bg-clr);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 2em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--text-primary-clr);
+}
+
+header .logo-text {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.25em;
+}
+
+header .logo-text .yellowish-text {
+  margin-left: 0.1em;
+  color: var(--primary-clr);
+}
+
+/* navbar styles */
+
+header .navbar {
+  /* background-color: lightpink; */
+}
+
+header .navbar .nav-list {
+  list-style: none;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+header .navbar .nav-list .nav-link {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  padding: 0.4em 0.8em;
+  color: var(--text-primary-clr);
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: all 0.15s;
+}
+
+header .navbar .nav-list .nav-link:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-clr);
+  color: var(--text-secondary-clr);
+}
+
+@media screen and (max-width: 1500px) {
+  header .navbar .nav-list .nav-link {
+    padding: 0.2em 0.4em;
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,62 @@
+section.opinions {
+  padding: var(--header-height) 2.25em;
+}
+
+section.opinions .opinions-header {
+  text-align: center;
+  color: var(--text-primary-clr);
+  font-size: 2.25rem;
+}
+
+section.opinions .opinions-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2.5em;
+  flex-wrap: wrap;
+
+  margin-top: 3em;
+}
+
+section.opinions .opinions-container .opinion {
+  max-width: 45%;
+  min-width: 550px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.5em;
+
+  border-radius: 8px;
+  border: 2px solid var(--primary-clr);
+  background-color: #fff;
+}
+
+section.opinions .opinions-container .opinion .user-container .user-img {
+  border-radius: 50%;
+  border: 2px solid var(--secondary-clr);
+}
+
+section.opinions .opinions-container .opinion .user-container .user-name {
+  text-align: center;
+  margin-top: 0.25em;
+  color: var(--text-primary-clr);
+}
+
+section.opinions .opinions-container .opinion .text-container {
+  text-align: center;
+  margin-top: 1.5em;
+  color: var(--text-secondary-clr);
+
+  padding: 0.75em 1.5em;
+}
+
+section.opinions .opinions-container .opinion .text-container .text::before {
+  content: '"';
+}
+
+section.opinions .opinions-container .opinion .text-container .text::after {
+  content: '"';
+}
