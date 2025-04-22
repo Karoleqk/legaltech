@@ -1,0 +1,39 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.video-container {
+  width: 100%;
+}
+
+.video-container iframe {
+  /* border-radius: 2em;
+  margin-bottom: 10em;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); */
+  border: none;
+}
+
+.go-back-btn {
+  position: absolute;
+  bottom: 100px;
+  left: 3em;
+
+  width: max-content;
+  text-decoration: none;
+
+  font-size: 1.05rem;
+  padding: 0.75em 1.25em;
+  background-color: var(--primary-clr);
+  color: var(--text-primary-clr);
+  border-radius: 8px;
+}
